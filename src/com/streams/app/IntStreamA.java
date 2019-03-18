@@ -9,7 +9,11 @@ public class IntStreamA {
 	}
 	
 	public static void main(String[] args) {
-		IntStream.range(1, 100).forEach(System.out::println);
+		//IntStream.range(1, 100).forEach(System.out::println);
+		System.out.println(IntStream.range(1, 10).sum());
+		System.out.println(IntStream.range(1, 10).count());
+		System.out.println(IntStream.of(1,2,3,4).toString());
+		IntStream.rangeClosed(1, 10).forEach(System.out::print);
 	}
 
 }
